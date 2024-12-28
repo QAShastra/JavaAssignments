@@ -30,7 +30,11 @@ public class Product  {
 	}
 
 	public void setPrice(double price) {
-		this.price = price;
+		if (price >= 0) {
+			this.price = price;
+        } else {
+            throw new IllegalArgumentException("The price must be greater than 0.");
+        }
 	}
 
 	public int getQuantity() {
@@ -38,7 +42,13 @@ public class Product  {
 	}
 
 	public void setQuantity(int quantity) {
-		this.quantity = quantity;
+		
+		if (quantity >= 0) {
+			this.quantity = quantity;
+        } else {
+            throw new IllegalArgumentException("The quantity cannot be negative.");
+        }
+		
 	}
 
 	
