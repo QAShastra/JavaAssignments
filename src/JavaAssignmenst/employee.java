@@ -1,9 +1,9 @@
 package JavaAssignmenst;
 
 public class employee {
-	int id;
-	String name;
-	double salary;
+private	int id;
+private	String name;
+private	double salary;
 	public employee() {
 		salary = 3000;	
 	}
