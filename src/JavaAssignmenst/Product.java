@@ -7,6 +7,7 @@ public class Product  {
 	String productName;
 	double price;
 	int quantity;
+	
 	public int getProductId() {
 		return productId;
 	}
@@ -15,8 +16,7 @@ public class Product  {
 		this.productId = productId;
 	}
 
-	
-	public String getProductName() {
+		public String getProductName() {
 		return productName;
 	}
 
@@ -47,9 +47,6 @@ public class Product  {
 		double total_Cost = price*quantity;
 		return total_Cost;
 	}  
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
+	
 
 }
