@@ -2,45 +2,34 @@ package JavaAssignmenst;
 
 public class Book{
 	
-	int productId;
-	String productName;
+	int BookId;
+	String BookName;
 	double price;
 	int quantity;
 	
-	public int getProductId() {
-		return productId;
+	public int getBookId() {
+		return BookId;
 	}
 
-
-	public void setProductId(int productId) {
-		this.productId = productId;
+	public void setBookId(int BookId) {
+		this.BookId = BookId;
 	}
 
-
-	
-	public String getProductName() {
-		return productName;
+	public String getBookName() {
+		return BookName;
 	}
 
-
-	public void setProductName(String productName) {
-		this.productName = productName;
+	public void setBookName(String BookName) {
+		this.BookName = BookName;
 	}
-
-
 
 	public double getPrice() {
 		return price;
 	}
 
-
 	public void setPrice(double price) {
 		this.price = price;
 	}
-
-
-	
-
 
 	public int getQuantity() {
 		return quantity;
@@ -51,10 +40,26 @@ public class Book{
 		this.quantity = quantity;
 	}
 
+	
+	public void displayBookDetails() {
+		
+		System.out.println("BookId : " + getBookId() );
+		System.out.println("BookName : " + getBookName());
+		System.out.println("Price : " + getPrice());
+		System.out.println("Quantity : " + getQuantity() );
+	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		
+		Book objBook= new Book();
+		objBook.setBookId(100);
+		objBook.setBookName("B112");
+		objBook.setPrice(500);
+		objBook.setQuantity(6);
+		
+		objBook.displayBookDetails();
+		
+		
 	}
 
 }
