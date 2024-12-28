@@ -1,6 +1,6 @@
 package JavaAssignmenst;
 
-public class test_employee {
+public class TestEmployee {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
